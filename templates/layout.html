@@ -16,9 +16,10 @@
 </head>
 <body>
     <nav>
-        <a href="/">🏠</a> | 
-        <a href="/about">😊</a> |
-        <a href="/posts">📰</a>
+        <a href="/"><span row="img" aria-label="Home" title="Home">🏠</span></a> | 
+        <a href="/about"><span row='img' aria-label="Happy" title="Happy">😊</span></a> |
+        <a href="{% url 'posts:list' %}"><span row="img" aria-label="Pages" title="Pages">📰</span></a> |
+        <a href="{% url 'users:register' %}"><span row="img" aria-label="User Registration" title="User Registration">🚀</span></a>
     </nav>
     <main>
         {% block content %}
